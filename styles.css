@@ -1,73 +1,123 @@
-/* Reset mặc định cho trình duyệt */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-/* Thiết lập body */
-body {
-    background: #f4f4f4;
-    text-align: center;
-}
+        body {
+            background: #f4f4f4;
+            text-align: center;
+        }
 
-/* Thanh điều hướng */
-nav {
-    background: #333;
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+        nav {
+            background: #333;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
-nav a:hover {
-    text-decoration: underline;
-}
+        nav a:hover {
+            color: #ff9900;
+        }
 
-/* Container chính */
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-/* Thiết lập các section */
-section {
-    padding: 20px 0;
-}
+        section {
+            padding: 20px 0;
+        }
 
-h1, h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
+        h1, h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
 
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
+        a {
+            color: #0073e6;
+            font-weight: bold;
+            text-decoration: none;
+        }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-    .container {
-        padding: 10px;
-    }
-}
+        a:hover {
+            color: #005bb5;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello! I'm <strong>Quynh Luu</strong>, a passionate web developer.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>Details about your work experience can be added here.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Highlight your key projects with descriptions and links.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> | <a href="https://github.com/quynhluu309" target="_blank">GitHub</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Quynh Luu. All rights reserved.</p>
+    </footer>
+</body>
+</html>
